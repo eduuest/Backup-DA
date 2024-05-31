@@ -44,13 +44,21 @@
                 \end{venndiagram2sets}
 
                 \begin{enumerate}
+                    \item $U = 100\%$
                     \item $F \cap B = 30\%$
-                    \item $F - (F \cap B) = 80\% - 30\% = 50\%$
-                    \item $B - (F \cap B) = 40\% - 30\% = 10\%$
+                    \item $F - B = 80\% - (F \cap B) = 80\% - 30\% = 50\%$
+                    \item $B - F = 40\% - (F \cap B) = 40\% - 30\% = 10\%$
                     \item $F \cup B = 50\% + 30\% + 10\% = 90\%$
                     \item $U - (F \cup B) = 100\% - 90\% = 10\%$
                 \end{enumerate}
 
+                \vspace{1cm}
+
+                \begin{venndiagram2sets}[labelNotAB = 10\%, labelA = F, labelB = B, labelAB = 30\%, labelOnlyA = 50\%, labelOnlyB = 10\%, tikzoptions = {scale = 1.5}]
+                    
+                \end{venndiagram2sets}
+
+                \newpage
                 \textbf{Respuesta:}
 
                 \begin{enumerate}
@@ -60,11 +68,7 @@
                     \item El 10\% no juegan ningún deporte.
                 \end{enumerate}
 
-                \vspace{1cm}
-
-                \begin{venndiagram2sets}[labelNotAB = 10\%, labelA = F, labelB = B, labelAB = 30\%, labelOnlyA = 50\%, labelOnlyB = 10\%, tikzoptions = {scale = 1.5}]
-                    
-                \end{venndiagram2sets}
+                
 
             \item \textbf{En un grupo de 30 estudiantes pertenecientes a un curso, 15 no estudiaron Matemáticas y 19 no estudiaron Lenguaje. Si tenemos un total de 12 alumnos que no estudiaron Lenguaje ni Matemáticas. ¿Cuántos alumnos estudian exactamente una de las materias mencionadas?}
             
@@ -74,6 +78,7 @@
                 \end{venndiagram2sets}
 
                 \begin{enumerate}
+                    \item $U = 30$
                     \item $x = U - (M \cup L) = 12$
                     \item $x + (L - M) = 15\\(L - M) = 15 - x\\(L - M) = 15 - 12 = 3$
                     \item $x + (M - L) = 19\\(M - L) = 19 - x\\(M - L) = 19 - 12 = 7$
@@ -81,13 +86,56 @@
                     \item $A \mathbin{\triangle} B = (L - M) \cup (M - L) = 3 + 7 = 10$ 
                 \end{enumerate}
 
-                \textbf{Respuesta:} 10 alumnos estudian exactamente una de las materias mencionadas.
-
                 \begin{venndiagram2sets}[labelNotAB = 12, labelA = M, labelB = L, labelAB = 8, labelOnlyA = 7, labelOnlyB = 3, tikzoptions = {scale = 1.5}]
-                    
+                 
+                \vspace{1cm}
                 \end{venndiagram2sets}
 
+                \textbf{Respuesta:} 10 alumnos estudian exactamente una de las materias mencionadas.
+
+               
+
             \item \textbf{En una investigación hecha a un grupo de 100 estudiantes, la cantidad de personas que estudian idiomas fueron las siguientes: español, 28; alemán, 30; y francés, 42; español y alemán, 8; español y francés, 10; alemán y francés, 5; los 3 idiomas, 3.\\a) ¿Cuántos no estudian nungún idioma?\\b) ¿Cuántos estudiantes tenían el francés como único idioma de estudio?}
+            
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelA = E, labelB = A, labelC = F, labelABC = 3, tikzoptions = {scale = 1.5}]
+                    \fillACapBCapC
+                \end{venndiagram3sets}
+
+                \begin{enumerate}
+                    \item $X = (E \cap A) \cap F = 3$
+                    \item $E \cap A = 8\\(E \cap A) - X = 8 - 3 = 5$
+                    \item $E \cap F = 10\\(E \cap F) - X = 10 - 3 = 7$
+                    \item $A \cap F = 5\\(A \cap F) - X = 5 - 3 = 2$
+                \end{enumerate}
+
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelA = E, labelB = A, labelC = F, labelABC = 3, labelOnlyAB = 5, labelOnlyAC = 7, labelOnlyBC = 2, tikzoptions = {scale = 1.5}]
+                    
+                \end{venndiagram3sets}
+
+                \begin{enumerate}
+                    \item $E = 28\\(E - A) - F = 28 - 5 - 3 - 7 = 13$
+                    \item $A = 30\\(A - E) - F = 30 - 5 - 3 -2 = 20$
+                    \item $F = 42\\(F - E) - A = 42 - 7 - 3 - 2 = 30$ 
+                    \item $ (E \cup A) \cup F = 13 + 20 + 30 + 3 + 5 + 7 + 2 = 80$
+                    \item $U = 100\\U - ((E \cup A) \cup F) = 100 - 80 = 20$
+                \end{enumerate}
+
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelNotABC = 20, labelA = E, labelB = A, labelC = F, labelABC = 3, labelOnlyAB = 5, labelOnlyAC = 7, labelOnlyBC = 2, labelOnlyA = 13, labelOnlyB = 20, labelOnlyC = 30, tikzoptions = {scale = 1.5}]
+                    
+                \end{venndiagram3sets}
+
+                \newpage
+                \textbf{Respuesta:}
+
+                \begin{enumerate}
+                    \item 20 alumnos no estudian ningún idioma.
+                    \item 30 estudiantes tenían el francés como único idioma de estudio.
+                \end{enumerate}
+
+
             \item \textbf{En una reunión se determina que 40 personas son aficionadas al juego, 39 son aficionadas al vino y 48 a las fiestas, además hay 10 personas que son aficionadas al vino, juego y fiestas, existen 9 personas aficionadas al juego y vino solamente, hay 11 personas que son aficionadas al juego solamente y por último 9 a las fiestas y al vino solamente.\\Determinar:\\a) El número de personas que es aficionada al vino solamente.\\b) El número de personas que es aficionada a las fiestas solamente.}
         \end{enumerate}
 
