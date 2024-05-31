@@ -137,6 +137,50 @@
 
 
             \item \textbf{En una reunión se determina que 40 personas son aficionadas al juego, 39 son aficionadas al vino y 48 a las fiestas, además hay 10 personas que son aficionadas al vino, juego y fiestas, existen 9 personas aficionadas al juego y vino solamente, hay 11 personas que son aficionadas al juego solamente y por último 9 a las fiestas y al vino solamente.\\Determinar:\\a) El número de personas que es aficionada al vino solamente.\\b) El número de personas que es aficionada a las fiestas solamente.}
+            
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, tikzoptions = {scale = 1.5}]
+                    \fillACapBCapC
+                \end{venndiagram3sets}
+
+                \begin{enumerate}
+                    \item $X = (J \cap V) \cap F = 10$
+                    \item $(J \cap V) - X = 9$
+                    \item $(F \cap V) - X = 9$
+                \end{enumerate}
+
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, tikzoptions = {scale = 1.5}]
+                
+                \end{venndiagram3sets}
+
+                \begin{enumerate}
+                    \item $(J - V) - F = 11 \rightarrow$ únicamente al juego.
+                    \item $V = 39\\(V - J) - F = 39 - 10 - 9 - 9 = 11 \rightarrow$ únicamente vino.
+                \end{enumerate}
+
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, labelOnlyA = 11, labelOnlyB = 11, tikzoptions = {scale = 1.5}]
+                
+                \end{venndiagram3sets}
+
+                \begin{enumerate}
+                    \item $J = 40\\(J \cap F) - X = 40 - 11 - 10 - 9 = 10 \rightarrow$ únicamente juego y fiesta.
+                    \item $F = 48\\(F - J) - V = 48 - 10 - 10 - 9 = 19 \rightarrow$ únicamente fiesta.
+                \end{enumerate}
+
+                \vspace{1cm}
+                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, labelOnlyA = 11, labelOnlyB = 11, labelOnlyAC = 10, labelOnlyC = 19, tikzoptions = {scale = 1.5}]
+                
+                \end{venndiagram3sets}
+
+                \textbf{Respuesta:}
+
+                \begin{enumerate}
+                    \item 11 personas son aficionadas al vino solamente.
+                    \item 19 personas son aficionadas a las fiestas solamente.
+                \end{enumerate}
+
         \end{enumerate}
 
 \end{document}
