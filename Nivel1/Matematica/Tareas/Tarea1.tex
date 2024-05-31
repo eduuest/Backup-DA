@@ -23,7 +23,7 @@
 \materia{Matemática \vspace{1cm}}
 \docente{Lcda. Vilma Duchi \vspace{1cm}}
 \ciclo{Primer Ciclo \vspace{1.1cm}}
-\fecha{30 de mayo de 2024 \vspace{1cm}}
+\fecha{31 de mayo de 2024 \vspace{1cm}}
 \periodo{Abril 2024 - Agosto 2024}
 
 
@@ -37,35 +37,35 @@
 
         \begin{enumerate}
             % Ejercicio 1: ------------------------------------------------------------------
-            \item \textbf{En un club deportivo, el 80\% de los socios juegan al fútbol y el 40\% al baloncesto. Sabiendo que el 30\% de los socios practican los 2 deportes, calcula la probabilidad de que un socio elegido al azar:\\a) Juegue sólo al fútbol.\\b) Juegue sólo al baloncesto.\\c) Juegue al fútbol y al baloncesto.\\d) No juegue a ninguno de los dos deportes.}
+            \item \textbf{En un club deportivo, el 80\% de los socios juegan al fútbol y el 40\% al baloncesto. Sabiendo que el 30\% de los socios practican los 2 deportes, calcula la probabilidad de que un socio elegido al azar:\\a) Juegue sólo al fútbol.\\b) Juegue sólo al baloncesto.\\c) Juegue al fútbol o al baloncesto.\\d) No juegue a ninguno de los dos deportes.}
                 
                 \vspace{1cm}
-                \begin{venndiagram2sets}[labelA = F, labelB = B, labelAB = \textbf{30\%}, tikzoptions = {scale = 1.5}]
-                    \fillACapB
-                \end{venndiagram2sets}
-
-                \begin{enumerate}
-                    \item $U = 100\%$
-                    \item $F \cap B = 30\%$
-                    \item $F - B = 80\% - (F \cap B) = 80\% - 30\% = 50\%$
-                    \item $B - F = 40\% - (F \cap B) = 40\% - 30\% = 10\%$
-                    \item $F \cup B = 50\% + 30\% + 10\% = 90\%$
-                    \item $U - (F \cup B) = 100\% - 90\% = 10\%$
-                \end{enumerate}
-
-                \vspace{1cm}
-
-                \begin{venndiagram2sets}[labelNotAB = 10\%, labelA = F, labelB = B, labelAB = 30\%, labelOnlyA = 50\%, labelOnlyB = 10\%, tikzoptions = {scale = 1.5}]
+                \begin{venndiagram2sets}[labelA = F, labelB = B, labelNotAB = a, labelOnlyA = b, labelAB = c, labelOnlyB = d, tikzoptions = {scale = 1.5}]
                     
                 \end{venndiagram2sets}
 
-                \newpage
+                \begin{enumerate}
+                    \item $U = 100\%, b + c = 80\%, c + d = 40\%, c = 30\%$
+                    \item $b + c = 80\% \rightarrow b + 30\% = 80\% \rightarrow b = 50\%$
+                    \item $c + d = 40\% \rightarrow 30\% + d = 40\% \rightarrow d = 10\%$
+                    \item $U = 100\% \\a + b + c + d = U \rightarrow a + 50\% + 30\% + 10\% = 100\% \rightarrow a + 90\% = 100\% \rightarrow a = 10\%$
+                    \item $F - B = b = \textbf{50\%}$
+                    \item $B - F = d = \textbf{10\%}$
+                    \item $F \cup B = b + c + d = 50\% + 30\% + 10\% = \textbf{90\%}$
+                    \item $U - (F \cup B) = a = \textbf{10\%}$
+                \end{enumerate}
+
+                \vspace{1cm}
+                \begin{venndiagram2sets}[labelA = F, labelB = B, labelNotAB = 10\%, labelOnlyA = 50\%, labelAB = 30\%, labelOnlyB = 10\%, tikzoptions = {scale = 1.5}]
+                    
+                \end{venndiagram2sets}
+
                 \textbf{Respuesta:}
 
                 \begin{enumerate}
                     \item El 50\% juegan sólo fútbol.
                     \item El 10\% juegan sólo baloncesto.
-                    \item El 30\% juegan al fútbol y al baloncesto.
+                    \item El 90\% juegan al fútbol o al baloncesto.
                     \item El 10\% no juegan ningún deporte.
                 \end{enumerate}
 
@@ -74,23 +74,22 @@
             \item \textbf{En un grupo de 30 estudiantes pertenecientes a un curso, 15 no estudiaron Matemáticas y 19 no estudiaron Lenguaje. Si tenemos un total de 12 alumnos que no estudiaron Lenguaje ni Matemáticas. ¿Cuántos alumnos estudian exactamente una de las materias mencionadas?}
             
                 \vspace{1cm}
-                \begin{venndiagram2sets}[labelNotAB = \textbf{12}, labelA = M, labelB = L, tikzoptions = {scale = 1.5}]
-                    \fillNotAorB
+                \begin{venndiagram2sets}[labelA = M, labelB = L, labelNotAB = a, labelOnlyA = b, labelAB = c, labelOnlyB = d, tikzoptions = {scale = 1.5}]
+                    
                 \end{venndiagram2sets}
 
                 \begin{enumerate}
-                    \item $U = 30$
-                    \item $x = U - (M \cup L) = 12$
-                    \item $x + (L - M) = 15\\(L - M) = 15 - x\\(L - M) = 15 - 12 = 3$
-                    \item $x + (M - L) = 19\\(M - L) = 19 - x\\(M - L) = 19 - 12 = 7$
-                    \item $M \cap L = 30 - 12 - 3 - 7 = 8$
-                    \item $A \mathbin{\triangle} B = (L - M) \cup (M - L) = 3 + 7 = 10$ 
+                    \item $U = 30 \rightarrow a + d = 15 \rightarrow a + b = 19 \rightarrow a = 12$
+                    \item $a + d = 15 \rightarrow 12 + d = 15 \rightarrow d = 3$
+                    \item $a + b = 19 \rightarrow 12 + b = 19 \rightarrow b = 7$
+                    \item $M \mathbin{\triangle} L = b + d = 7 + 3 = \textbf{10}$
                 \end{enumerate}
 
-                \begin{venndiagram2sets}[labelNotAB = 12, labelA = M, labelB = L, labelAB = 8, labelOnlyA = 7, labelOnlyB = 3, tikzoptions = {scale = 1.5}]
-                 
                 \vspace{1cm}
+                \begin{venndiagram2sets}[labelA = M, labelB = L, labelNotAB = 12, labelOnlyA = 7, labelAB = 8, labelOnlyB = 3, tikzoptions = {scale = 1.5}]
+                    
                 \end{venndiagram2sets}
+
 
                 \textbf{Respuesta:} 10 alumnos estudian exactamente una de las materias mencionadas.
 
@@ -99,28 +98,22 @@
             \item \textbf{En una investigación hecha a un grupo de 100 estudiantes, la cantidad de personas que estudian idiomas fueron las siguientes: español, 28; alemán, 30; y francés, 42; español y alemán, 8; español y francés, 10; alemán y francés, 5; los 3 idiomas, 3.\\a) ¿Cuántos no estudian nungún idioma?\\b) ¿Cuántos estudiantes tenían el francés como único idioma de estudio?}
             
                 \vspace{1cm}
-                \begin{venndiagram3sets}[labelA = E, labelB = A, labelC = F, labelABC = 3, tikzoptions = {scale = 1.5}]
-                    \fillACapBCapC
-                \end{venndiagram3sets}
-
-                \begin{enumerate}
-                    \item $X = (E \cap A) \cap F = 3$
-                    \item $E \cap A = 8\\(E \cap A) - X = 8 - 3 = 5$
-                    \item $E \cap F = 10\\(E \cap F) - X = 10 - 3 = 7$
-                    \item $A \cap F = 5\\(A \cap F) - X = 5 - 3 = 2$
-                \end{enumerate}
-
-                \vspace{1cm}
-                \begin{venndiagram3sets}[labelA = E, labelB = A, labelC = F, labelABC = 3, labelOnlyAB = 5, labelOnlyAC = 7, labelOnlyBC = 2, tikzoptions = {scale = 1.5}]
+                \begin{venndiagram3sets}[labelNotABC = a, labelA = E, labelB = A, labelC = F, labelABC = f, labelOnlyAB = c, labelOnlyAC = e, labelOnlyBC = g, labelOnlyA = b, labelOnlyB = d, labelOnlyC = h, tikzoptions = {scale = 1.5}]
                     
                 \end{venndiagram3sets}
 
                 \begin{enumerate}
-                    \item $E = 28\\(E - A) - F = 28 - 5 - 3 - 7 = 13$
-                    \item $A = 30\\(A - E) - F = 30 - 5 - 3 -2 = 20$
-                    \item $F = 42\\(F - E) - A = 42 - 7 - 3 - 2 = 30$ 
-                    \item $ (E \cup A) \cup F = 13 + 20 + 30 + 3 + 5 + 7 + 2 = 80$
-                    \item $U = 100\\U - ((E \cup A) \cup F) = 100 - 80 = 20$
+                    \item $U = 100, b + c + e + f = 28, c + d + f + g = 30, e + f + g + h =  42$
+                    \item $c + f = 8, e + f = 10, f + g = 5, f = 3$
+                    \item $f + g = 5 \rightarrow 3 + g = 5 \rightarrow g = 2$
+                    \item $e + f = 10 \rightarrow e + 3 = 10 \rightarrow e = 7$
+                    \item $c + f = 8 \rightarrow c + 3 = 8 \rightarrow c = 5$
+                    \item $b + c + e + f = 28 \rightarrow b + 5 + 7 + 3 = 28 \rightarrow b + 15 = 28 \rightarrow b = 13$
+                    \item $c + d + f + g = 30 \rightarrow 5 + d + 3 + 2 = 30 \rightarrow d + 10 = 30 \rightarrow d = 20$
+                    \item $e + f + g + h = 42 \rightarrow 7 + 3 + 2 + h = 42 \rightarrow 12 + h = 42 \rightarrow h = 30$
+                    \item $U = a + b + c + d + e + f + g + h = 100\\a + 13 + 5 + 20 + 7 + 3 + 2 + 30 = 100 \rightarrow a + 80 = 100 \rightarrow a = 20$
+                    \item $U - (E \cup A \cup F) = a = \textbf{20}$
+                    \item $(F - E) - A = h = \textbf{30}$
                 \end{enumerate}
 
                 \vspace{1cm}
@@ -128,51 +121,35 @@
                     
                 \end{venndiagram3sets}
 
-                \newpage
                 \textbf{Respuesta:}
 
                 \begin{enumerate}
                     \item 20 alumnos no estudian ningún idioma.
                     \item 30 estudiantes tenían el francés como único idioma de estudio.
-                \end{enumerate}
+                \end{enumerate} 
 
+            \newpage
             % Ejercicio 4: -------------------------------------------------------------------------------------
             \item \textbf{En una reunión se determina que 40 personas son aficionadas al juego, 39 son aficionadas al vino y 48 a las fiestas, además hay 10 personas que son aficionadas al vino, juego y fiestas, existen 9 personas aficionadas al juego y vino solamente, hay 11 personas que son aficionadas al juego solamente y por último 9 a las fiestas y al vino solamente.\\Determinar:\\a) El número de personas que es aficionada al vino solamente.\\b) El número de personas que es aficionada a las fiestas solamente.}
             
                 \vspace{1cm}
-                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, tikzoptions = {scale = 1.5}]
-                    \fillACapBCapC
+                \begin{venndiagram3sets}[labelNotABC = a, labelA = J, labelB = V, labelC = F, labelABC = f, labelOnlyAB = c, labelOnlyAC = e, labelOnlyBC = g, labelOnlyA = b, labelOnlyB = d, labelOnlyC = h, tikzoptions = {scale = 1.5}]
+                    
                 \end{venndiagram3sets}
-
-                \begin{enumerate}
-                    \item $X = (J \cap V) \cap F = 10 \rightarrow$ juego, vino y fiesta.
-                    \item $(J \cap V) - X = 9 \rightarrow$ únicamente juego y vino. 
-                    \item $(F \cap V) - X = 9 \rightarrow$ únicamente fiesta y vino.
-                \end{enumerate}
-
-                \vspace{1cm}
-                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, tikzoptions = {scale = 1.5}]
                 
-                \end{venndiagram3sets}
 
                 \begin{enumerate}
-                    \item $(J - V) - F = 11 \rightarrow$ únicamente al juego.
-                    \item $V = 39\\(V - J) - F = 39 - 10 - 9 - 9 = 11 \rightarrow$ únicamente vino.
+                    \item $b + c + e + f = 40, c + d + f + g = 39, e + f + g + h = 48$
+                    \item $f = 10, c = 9, b = 11, g = 9$
+                    \item $b + c + e + f = 40 \rightarrow 11 + 9 + e + 10 = 40 \rightarrow e + 30 = 40 \rightarrow e = 10$
+                    \item $c + d + f + g = 39 \rightarrow 9 + d + 10 + 9 = 39 \rightarrow d + 28 = 39 \rightarrow d = 11$
+                    \item $e + f + g + h = 48 \rightarrow 10 + 10 + 9 + h = 48 \rightarrow 29 + h = 48 \rightarrow h = 19$
+                    \item $(V - J) - F = d = \textbf{11}$
+                    \item $(F - J) - V = h = \textbf{19}$
                 \end{enumerate}
 
                 \vspace{1cm}
-                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, labelOnlyA = 11, labelOnlyB = 11, tikzoptions = {scale = 1.5}]
-                
-                \end{venndiagram3sets}
-
-                \begin{enumerate}
-                    \item $J = 40\\(J \cap F) - X = 40 - 11 - 10 - 9 = 10 \rightarrow$ únicamente juego y fiesta.
-                    \item $F = 48\\(F - J) - V = 48 - 10 - 10 - 9 = 19 \rightarrow$ únicamente fiesta.
-                    \item $U = 40 + 20 + 19 = 79$
-                \end{enumerate}
-
-                \vspace{1cm}
-                \begin{venndiagram3sets}[labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, labelOnlyA = 11, labelOnlyB = 11, labelOnlyAC = 10, labelOnlyC = 19, tikzoptions = {scale = 1.5}]
+                \begin{venndiagram3sets}[labelNotABC = 0, labelA = J, labelB = V, labelC = F, labelABC = 10, labelOnlyAB = 9, labelOnlyBC = 9, labelOnlyA = 11, labelOnlyB = 11, labelOnlyAC = 10, labelOnlyC = 19, tikzoptions = {scale = 1.5}]
                 
                 \end{venndiagram3sets}
 
