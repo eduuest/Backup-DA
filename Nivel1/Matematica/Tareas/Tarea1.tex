@@ -48,7 +48,7 @@
                     \item $F - (F \cap B) = 80\% - 30\% = 50\%$
                     \item $B - (F \cap B) = 40\% - 30\% = 10\%$
                     \item $F \cup B = 50\% + 30\% + 10\% = 90\%$
-                    \item $U - (F \cup B) = 100\% - 90\%$
+                    \item $U - (F \cup B) = 100\% - 90\% = 10\%$
                 \end{enumerate}
 
                 \textbf{Respuesta:}
@@ -67,6 +67,26 @@
                 \end{venndiagram2sets}
 
             \item \textbf{En un grupo de 30 estudiantes pertenecientes a un curso, 15 no estudiaron Matemáticas y 19 no estudiaron Lenguaje. Si tenemos un total de 12 alumnos que no estudiaron Lenguaje ni Matemáticas. ¿Cuántos alumnos estudian exactamente una de las materias mencionadas?}
+            
+                \vspace{1cm}
+                \begin{venndiagram2sets}[labelNotAB = \textbf{12}, labelA = M, labelB = L, tikzoptions = {scale = 1.5}]
+                    \fillNotAorB
+                \end{venndiagram2sets}
+
+                \begin{enumerate}
+                    \item $x = U - (M \cup L) = 12$
+                    \item $x + (L - M) = 15\\(L - M) = 15 - x\\(L - M) = 15 - 12 = 3$
+                    \item $x + (M - L) = 19\\(M - L) = 19 - x\\(M - L) = 19 - 12 = 7$
+                    \item $M \cap L = 30 - 12 - 3 - 7 = 8$
+                    \item $A \mathbin{\triangle} B = (L - M) \cup (M - L) = 3 + 7 = 10$ 
+                \end{enumerate}
+
+                \textbf{Respuesta:} 10 alumnos estudian exactamente una de las materias mencionadas.
+
+                \begin{venndiagram2sets}[labelNotAB = 12, labelA = M, labelB = L, labelAB = 8, labelOnlyA = 7, labelOnlyB = 3, tikzoptions = {scale = 1.5}]
+                    
+                \end{venndiagram2sets}
+
             \item \textbf{En una investigación hecha a un grupo de 100 estudiantes, la cantidad de personas que estudian idiomas fueron las siguientes: español, 28; alemán, 30; y francés, 42; español y alemán, 8; español y francés, 10; alemán y francés, 5; los 3 idiomas, 3.\\a) ¿Cuántos no estudian nungún idioma?\\b) ¿Cuántos estudiantes tenían el francés como único idioma de estudio?}
             \item \textbf{En una reunión se determina que 40 personas son aficionadas al juego, 39 son aficionadas al vino y 48 a las fiestas, además hay 10 personas que son aficionadas al vino, juego y fiestas, existen 9 personas aficionadas al juego y vino solamente, hay 11 personas que son aficionadas al juego solamente y por último 9 a las fiestas y al vino solamente.\\Determinar:\\a) El número de personas que es aficionada al vino solamente.\\b) El número de personas que es aficionada a las fiestas solamente.}
         \end{enumerate}
