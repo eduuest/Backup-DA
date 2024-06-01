@@ -1,6 +1,6 @@
 ## Introducción a la Programación
 
-## Tareas
+### Tareas
 
 <ul>
     <li>
