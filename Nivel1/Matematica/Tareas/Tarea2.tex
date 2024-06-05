@@ -89,6 +89,22 @@
                 \item \textbf{Resuelva los siguientes problemas:}
                     \begin{enumerate}
                         \item \textbf{Se dice que en la Ciudad de Cuenca 550 personas ven los canales D, E o F, 220 ven el canal D, 150 ven el canal E Y 100 no ven el canal F, los que ven por lo menos 2 canales son 120 ¿cuántos ven los tres canales?}
+                        
+                            \vspace{1cm}
+                            \begin{venndiagram3sets}[labelA = D, labelB = E, labelC = F, labelABC = e, labelOnlyAB = b, labelOnlyAC = d, labelOnlyBC = f, labelOnlyA = a, labelOnlyB = c, labelOnlyC = g]
+                                
+                            \end{venndiagram3sets}
+
+                            \begin{enumerate}
+                                \item $Ec_1: U = a + b + c + d + e + f + g = 550\\Ec_2: D = a + b + d + e = 220\\Ec_3: E = b + c + e + f = 150\\Ec_4: (D \cup E) - F = a + b + c = 100\\Ec_5: (D \cap E) \cup (E \cap F) \cup (F \cap D) = b + d + e + f = 120$
+                                \item Igualando $Ec_2$ con $Ec_4:\\220 - b - d - e = 100 - b - c\\- b - d - e + b + c = 100 - 220\\- d - e + c = - 120\\ - d = - 120 + e - c\\Ec_6: d = 120 - e + c$
+                                \item Igualando $Ec_3$ con $Ec_5:\\150 - c - e - f = 120 - d - e - f\\- c - e - f + d + e + f = 120 - 150\\- c + d = - 30\\Ec_7: d = - 30 + c$
+                                \item Igualando $Ec_6$ con $Ec_7:\\120 - e + c = - 30 + c\\- e + c - c = - 30 - 120\\- e = - 150\\e = 150$
+                            \end{enumerate}
+            
+                            
+                            \textbf{Respuesta:} El número de personas que ven los 3 canales es 150.
+
                         \item \textbf{De un grupo de estudiantes de entrenamiento deportivo: 19 practican básquet y natación, 37 practican solo natación, 30 practican básquet, Si 14 no practican ningún deporte de los mencionados. ¿Cuántos estudiantes hay en ese grupo?}
                     \end{enumerate}
             \end{enumerate}    
