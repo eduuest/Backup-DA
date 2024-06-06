@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+
+
+% -------------------- PAQUETES --------------------
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+% -------------------- CARGA DE ARCHIVOS EXTERNOS --------------------
+\input{../../../RecursosGlobales/Docs/FormatoDocs.tex}
+\input{../../../RecursosGlobales/Docs/PortadaTareasDef}
+
+
+% -------------------- DEFINICIÓN DE LA PORTADA --------------------
+\rutaLogo{../../../RecursosGlobales/Img/logo_tec_azuay.png}
+\tema{\\ \vspace{1cm} Actividad N°3: Taller de Ejercicios - Demostraciones \\ \vspace{1.7cm}}
+\etiquetaAutores{Alumno:}
+\alumno{Eduardo Mendieta \vspace{1cm}}
+\materia{Matemática \vspace{1cm}}
+\docente{Lcda. Vilma Duchi \vspace{1cm}}
+\ciclo{Primer Ciclo \vspace{1.1cm}}
+\fecha{05 de junio de 2024 \vspace{1cm}}
+\periodo{Abril 2024 - Agosto 2024}
+
+
+
+% -------------------- INFORME --------------------
+\begin{document}
+
+    \input{../../../RecursosGlobales/Docs/PortadaTareas}
+  
+    \section*{\centering Actividad N°3: Taller de Ejercicios - Demostraciones}
+        Realizar las siguientes demostraciones:
+
+        \begin{enumerate}
+            \item $A - (A \cup B) \cup B = B $
+                \par$A \cap (A \cup B)' \cup B = B\\A \cap (A' \cap B') \cup B = B\\(A \cap A' \cap B') \cup B = B\\(\O \cap B') \cup B = B\\\O \cup B = B\\B = B$    
+
+            \item $(A \cap B) \cup (A - B) = A$
+                \par$(A \cap B) \cup (A \cap B') = A\\ A \cap (B \cup B') = A\\A \cap U = A\\A = A$
+
+            \item $A - (B \cap C) = (A - B) \cup (A - C)$
+                \par$A \cap (B \cap C)' = (A \cap B') \cup (A \cap C')\\A \cap (B' \cup C') = A \cap (B' \cup C')$
+
+            \item $[A - (A \cap B)] \cup [B - (A \cap B)] \cup (A \cap B) = A \cup B$
+                \par$[A \cap (A \cap B)'] \cup [B \cap (A \cap B)'] \cup (A \cap B) = A\cup B$\\$[A \cap (A' \cup B')] \cup [B \cap (A' \cup B')] \cup (A \cap B) = A \cup B$\\$[(A \cap A') \cup (A \cap B')] \cup [(B \cap A') \cup (B \cap B')] \cup (A \cap B) = A \cup B$\\$[\O \cup (A \cap B')] \cup [(B \cap A') \cup \O] \cup (A \cap B) = A \cup B\\(A \cap B') \cup (A \cap B) \cup (B \cap A') = A \cup B\\A \cap (B \cup B') \cup (B \cap A') = A \cup B$
+                \\$(A \cap U) \cup (B \cap A') = A \cup B\\A \cup (B \cap A') = A \cup B\\(A \cup B) \cap (A \cup A') = A \cup B\\(A \cup B) \cap U = A \cup B\\A \cup B = A \cup B$
+
+            \item $(A \cup B) \cap (A \cup B') \cap (A' \cup B) = A \cap B$
+            \item $(A \cap (B \cap C')') \cup ((A' \cup B') \cup C)' = A$
+        \end{enumerate}
+
+\end{document}
