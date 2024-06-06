@@ -17,7 +17,7 @@
 
 % -------------------- DEFINICIÓN DE LA PORTADA --------------------
 \rutaLogo{../../../RecursosGlobales/Img/logo_tec_azuay.png}
-\tema{\\ \vspace{1cm} Actividad N°2: \\Taller - Fin de la Unidad N°1 \\ \vspace{1.7cm}}
+\tema{\\ \vspace{1cm} Actividad N°2: \\Taller Unidad N°1 \\ \vspace{1.7cm}}
 \etiquetaAutores{Alumno:}
 \alumno{Eduardo Mendieta \vspace{1cm}}
 \materia{Matemática \vspace{1cm}}
@@ -33,7 +33,7 @@
 
     \input{../../../RecursosGlobales/Docs/PortadaTareas}
   
-    \section*{\centering Actividades de fin de la Unidad N°1}
+    \section*{\centering Taller Unidad N°1}
 
         % ACTIVIDAD 1 -------------------------------------------------------
         \subsection*{\textbf{\centering ACTIVIDAD 1}}
@@ -44,19 +44,42 @@
                         \item \textbf{Tabulación}
                             \par$A = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, ...\}$
                             \par$B = \{4, 5 ,6, 7, 8, 9, 10, 11, 12, ...\}$
-                            \par$C = \{3, 4, 5, 6, 8, 9, 10, 11, 12, ...\}$
-                            \par$D = \{-3, -2, -1, 0, 1, 2, 3, 4, ...\}$
+                            \par$C = \{8, 9, 10, 11, 12, 13, 14, 15, ...\}$
+                            \par$D = \{\}$
                         \item \textbf{Comprensión}
                             \par$A = \{x / x \in N\}$
                             \par$B = \{x / x \in N, x > 3\}$
-                            \par$C = \{x / x \in N, x > 2, x \neq 7\}$
-                            \par$D = \{x / x \in R, x \geq -3\}$
+                            \par$C = \{x / x \in N, x > 7\}$
+                            \par$D = \{x / x \in R, x \neq x\}$
                     \end{itemize}
                 \item \textbf{Realice Diagramas de Venn del ejercicio anterior.}
+                    \begin{figure}[h!]
+                        \centering
+                        \begin{minipage}[b]{0.2\textwidth}
+                            \centering
+                            \includegraphics[width=\textwidth]{Img/Tarea2/Tarea2_ej1_a.png}
+                        \end{minipage}
+                        \hfill
+                        \begin{minipage}[b]{0.23\textwidth}
+                            \centering
+                            \includegraphics[width=\textwidth]{Img/Tarea2/Tarea2_ej1_b.png}
+                        \end{minipage}
+                        \hfill
+                        \begin{minipage}[b]{0.26\textwidth}
+                            \centering
+                            \includegraphics[width=\textwidth]{Img/Tarea2/Tarea2_ej1_c.png}
+                        \end{minipage}
+                        \hfill
+                        \begin{minipage}[b]{0.19\textwidth}
+                            \centering
+                            \includegraphics[width=\textwidth]{Img/Tarea2/Tarea2_ej1_d.png}
+                        \end{minipage}
+                    \end{figure}
                 
             \end{enumerate}
 
             % ACTIVIDAD 2: ---------------------------------------------------------
+            \newpage
             \subsection*{\textbf{\centering ACTIVIDAD 2}}
 
             \begin{enumerate}
@@ -67,22 +90,23 @@
                     \end{figure}
 
                     \begin{enumerate}
-                        \item $A \cup B =$
-                        \item $B \cap A =$
-                        \item $A \cup C =$
-                        \item $C \cap A =$
-                        \item $A \cup D =$
-                        \item $D \cap A =$
-                        \item $C - F =$
-                        \item $A - A =$
-                        \item $D - A =$
-                        \item $B^C - A^C =$
-                        \item $C - A =$
-                        \item $(E \cap B)^C = $
+                        \item $A \cup B = \{2, 3, 4, 6, 7, 9, 11, 12, 13\}$
+                        \item $B \cap A = \{\}$
+                        \item $A \cup C = \{2, 3, 4, 6, 7, 9, 14, 15, 16\}$
+                        \item $C \cap A = \{\}$
+                        \item $A \cup D = \{1, 2, 3, 4, 5, 6, 7, 9\}$
+                        \item $D \cap A = \{2\}$
+                        \item $C - F = \{15, 16\}$
+                        \item $A - A = \{\}$
+                        \item $D - A = \{1, 5\}$
+                        \item $B^C - A^C = \{11, 12, 13\}$
+                        \item $C - A = \{14, 15, 16\}$
+                        \item $(E \cap B)^C = \{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17\}$
                     \end{enumerate}
             \end{enumerate}
 
         % ACTIVIDAD 3: -------------------------------------------------------------------
+        \newpage
         \subsection*{\textbf{\centering ACTIVIDAD 3}}
 
             \begin{enumerate}
@@ -104,8 +128,23 @@
             
                             
                             \textbf{Respuesta:} El número de personas que ven los 3 canales es 150.
-
+                        
+                        \newpage
                         \item \textbf{De un grupo de estudiantes de entrenamiento deportivo: 19 practican básquet y natación, 37 practican solo natación, 30 practican básquet, Si 14 no practican ningún deporte de los mencionados. ¿Cuántos estudiantes hay en ese grupo?}
+                            
+                            \vspace{1cm}
+                            \begin{venndiagram2sets}[labelNotAB = a,labelA = B, labelB = N, labelAB = c, labelOnlyA = b, labelOnlyB = d]
+                                
+                            \end{venndiagram2sets}
+
+                            \begin{enumerate}
+                                \item $B \cap N = c = 19\\N - B = d = 37\\B = b + c = 30\\U - (B \cup N) = a = 14$
+                                \item $B = b + c = 30\\b + 19 = 30\\b = 11$
+                                \item $U = a + b + c + d\\U = 14 + 11 + 19 + 37\\U = 81$
+                            \end{enumerate}
+            
+                            
+                            \textbf{Respuesta:} Existen 81 estudiantes en el grupo.
                     \end{enumerate}
             \end{enumerate}    
 
