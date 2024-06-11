@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+
+
+% -------------------- PAQUETES --------------------
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+% -------------------- CARGA DE ARCHIVOS EXTERNOS --------------------
+\input{../../../RecursosGlobales/Docs/FormatoDocs.tex}
+\input{../../../RecursosGlobales/Docs/PortadaTareasDef}
+
+
+% -------------------- DEFINICIÓN DE LA PORTADA --------------------
+\rutaLogo{../../../RecursosGlobales/Img/logo_tec_azuay.png}
+\tema{\\ \vspace{1cm} Actividad N°5: Tarea en Clase\\Proposiciones y tablas de verdad \\ \vspace{1.7cm}}
+\etiquetaAutores{Alumno:}
+\alumno{Eduardo Mendieta \vspace{1cm}}
+\materia{Matemática \vspace{1cm}}
+\docente{Lcda. Vilma Duchi \vspace{1cm}}
+\ciclo{Primer Ciclo \vspace{1.1cm}}
+\fecha{10 de junio de 2024 \vspace{1cm}}
+\periodo{Abril 2024 - Agosto 2024}
+
+
+
+% -------------------- INFORME --------------------
+\begin{document}
+
+    \input{../../../RecursosGlobales/Docs/PortadaTareas}
+  
+    \section*{\centering Tarea en Clase - Proposiciones y tablas de verdad}
+        \textbf{Formaliza la siguiente proposición y encuentre la tabla de verdad:}
+
+        \begin{enumerate}
+             % EJERCICIO 1: ----------------------------------------------------
+            \item \textbf{Si tuvieran que justificarse ciertos hechos por su enorme tradición entonces, si estos hechos son inofensivos y respetan a todo ser viviente y al medio ambiente, no habría ningún problema. Pero si los hechos son bárbaros o no respetuosos con los seres vivientes o el medio ambiente, entonces habría que dejar de justificarlos o no podriamos considerarnos dignos de nuestro tiempo.}
+                \par$p:$ Justificar ciertos hechos.
+                \par$q:$ Los hechos son inofensivos.
+                \par$r:$ Los hechos respetan a todo ser viviente.
+                \par$s:$ Los hechos respetan al medio ambiente.
+                \par$t:$ Existe un problema.
+                \par$u:$ Somos dignos de nuestro tiempo.
+                \par$n = 6$, $2^n = 2^6 = 64$
+                \par\vspace{0.5cm}$p \longrightarrow [((q \wedge r \wedge s) \longrightarrow \sim t) \wedge ((\sim q \vee \sim (r \vee s)) \longrightarrow (\sim p \vee \sim u))]$
+
+            
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea5_ej1_1.png}
+                \end{figure}
+
+                \newpage
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea5_ej1_2.png}
+                \end{figure}
+
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea5_ej1_3.png}
+                \end{figure}
+
+                \textbf{Respuesta:} El enunciado es una contingencia.
+
+        \end{enumerate}
+
+\end{document}
