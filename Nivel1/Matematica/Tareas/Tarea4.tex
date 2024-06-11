@@ -1,0 +1,113 @@
+\documentclass[12pt]{article}
+
+
+% -------------------- PAQUETES --------------------
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+
+% -------------------- CARGA DE ARCHIVOS EXTERNOS --------------------
+\input{../../../RecursosGlobales/Docs/FormatoDocs.tex}
+\input{../../../RecursosGlobales/Docs/PortadaTareasDef}
+
+
+% -------------------- DEFINICIÓN DE LA PORTADA --------------------
+\rutaLogo{../../../RecursosGlobales/Img/logo_tec_azuay.png}
+\tema{\\ \vspace{1cm} Actividad N°4: Tablas de verdad \\ \vspace{1.7cm}}
+\etiquetaAutores{Alumno:}
+\alumno{Eduardo Mendieta \vspace{1cm}}
+\materia{Matemática \vspace{1cm}}
+\docente{Lcda. Vilma Duchi \vspace{1cm}}
+\ciclo{Primer Ciclo \vspace{1.1cm}}
+\fecha{10 de junio de 2024 \vspace{1cm}}
+\periodo{Abril 2024 - Agosto 2024}
+
+
+
+% -------------------- INFORME --------------------
+\begin{document}
+
+    \input{../../../RecursosGlobales/Docs/PortadaTareas}
+  
+    \section*{\centering Actividad N°4: Tablas de verdad}
+        \textbf{Formaliza los siguientes argumentos y halla la tabla de verdad:}
+
+        \begin{enumerate}
+             % EJERCICIO 1: ----------------------------------------------------
+            \item \textbf{Aprobare lógica, si Dios quiere. Aprobare lógica si y sólo si estudio y hago todos los ejercicios. Sin embargo, no he hecho los ejercicios, así que Dios no quiere que apruebe lógica.}
+                \par$p:$ Aprobaré lógica.
+                \par$q:$ Si Dios quiere.
+                \par$r:$ Estudio.
+                \par$s:$ Hago todos los ejercicios.
+                \par$n = 4$, $2^n = 2^4 = 16$
+                \par\vspace{0.5cm}$[(p \longrightarrow q) \wedge (p \longleftrightarrow (r \wedge s)) \wedge \sim s] \longrightarrow (\sim q \longrightarrow \sim p)$ 
+            
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea4_ej1.png}
+                \end{figure}
+
+                \textbf{Respuesta:} El enunciado es una tautología.
+
+                % EJERCICIO 2: ----------------------------------------------------
+                \newpage
+                \item \textbf{Si la tormeta continúa o anochece, nos quedaremos a cenar o a dormir. Si nos quedamos a cenar o a dormir, no iremos mañana al concierto. Pero si iremos mañana al concierto. Así pues, la tormenta no continúa.}
+                \par$p:$ La tormenta continúa.
+                \par$q:$ Anochece.
+                \par$r:$ Nos quedaremos a cenar.
+                \par$s:$ Nos quedamos a dormir.
+                \par$t:$ Iremos mañana al concierto.
+                \par$n = 5$, $2^n = 2^5 = 32$
+                \par\vspace{0.5cm}$[(p \vee q) \longrightarrow (r \vee s)] \wedge [(r \vee s) \longrightarrow \sim t] \wedge (t \longrightarrow \sim p)$
+            
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea4_ej2_1.png}
+                \end{figure}
+
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea4_ej2_2.png}
+                \end{figure}
+
+                \textbf{Respuesta:} El enunciado es una contingencia.
+
+             % EJERCICIO 3: ----------------------------------------------------
+             \newpage
+            \item \textbf{Si no es cierto que se puede ser rico y dichoso a la vez, entonces la vida está llena de frustraciones y no es un camino de rosas. Si se es feliz, no se puede tener todo. Por consiguiente, la vida está llena de frustraciones.}
+                \par$p:$ Se puede ser rico.
+                \par$q:$ Se puede ser dichoso.
+                \par$r:$ La vida está llena de frustraciones.
+                \par$s:$ Es un camino de rosas.
+                \par$n = 4$, $2^n = 2^4 = 16$
+                \par\vspace{0.5cm}$[(\sim (p \wedge q) \longrightarrow (r \wedge \sim s)) \wedge (q \longrightarrow \sim p)] \longrightarrow r$
+             
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea4_ej3.png}
+                \end{figure}
+
+                \textbf{Respuesta:} El enunciado es una tautología.
+                % EJERCICIO 4: ----------------------------------------------------
+             \newpage
+            \item \textbf{La vida no tiene cosas así de fuertes o yo te puedo contar cómo es una llama por dentro. Si yo te puedo contar cómo es una llama por dentro, entonces pienso entregarte mi tiempo y pienso entregarte mi fe. No es cierto que piense entregarte mi tiempo y piense entregarte mi fe. Por lo tanto, la vida no tiene cosas así de fuertes.}
+                \par$p:$ La vida tiene cosas asi de fuertes.
+                \par$q:$ Te puedo contar cómo es una llama por dentro.
+                \par$r:$ Pienso entregarte mi tiempo.
+                \par$s:$ Pienso entregarte mi fe.
+                \par$n = 4$, $2^n = 2^4 = 16$
+                \par\vspace{0.5cm}$[(\sim p \vee q) \wedge (q \longrightarrow (r \wedge s)) \wedge (\sim (r \wedge s))] \longrightarrow \sim p$
+                
+                \begin{figure}[!h]
+                    \centering
+                    \includegraphics[width=0.6\textwidth]{Img/Tarea4_ej4.png}
+                \end{figure}
+
+                \textbf{Respuesta:} El enunciado es una contingencia.
+
+        \end{enumerate}
+
+\end{document}
