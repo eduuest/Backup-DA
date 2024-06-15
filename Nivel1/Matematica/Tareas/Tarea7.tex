@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+
+
+% -------------------- PAQUETES --------------------
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[margin=2.54cm]{geometry}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+
+% -------------------- CARGA DE ARCHIVOS EXTERNOS --------------------
+\input{../../../RecursosGlobales/Docs/FormatoDocs.tex}
+\input{../../../RecursosGlobales/Docs/PortadaTareasDef}
+
+
+% -------------------- DEFINICIÓN DE LA PORTADA --------------------
+\rutaLogo{../../../RecursosGlobales/Img/logo_tec_azuay.png}
+\tema{\\ \vspace{1cm} Actividad N°7: Taller de ejercicios\\Leyes del Álgebra Proposicional \\ \vspace{1.7cm}}
+\etiquetaAutores{Alumno:}
+\alumno{Eduardo Mendieta \vspace{1cm}}
+\materia{Matemática \vspace{1cm}}
+\docente{Lcda. Vilma Duchi \vspace{1cm}}
+\ciclo{Primer Ciclo \vspace{1.1cm}}
+\fecha{14 de junio de 2024 \vspace{1cm}}
+\periodo{Abril 2024 - Agosto 2024}
+
+
+
+% -------------------- INFORME --------------------
+\begin{document}
+
+    \input{../../../RecursosGlobales/Docs/PortadaTareas}
+  
+    \section*{\centering Taller de ejercicios - Leyes del Álgebra Proposicional}
+
+        \vspace{0.6cm}
+        \noindent \textbf{Aplicando las leyes de Álgebra proposicional, resolver los ejercicios propuestos:}
+
+        \vspace{0.6cm}
+        \begin{enumerate}[start=5]
+            \item {\large $(\sim p \vee \sim q) \wedge [\sim p \wedge (q \longrightarrow p)]$} {\footnotesize Leyes condicionales.}
+                \par$(\sim p \vee \sim q) \wedge [\sim p \wedge (\sim q \vee p)]$ {\footnotesize Leyes conmutativas.}
+                \par$(\sim p \vee q) \wedge [\sim p \wedge (p \vee \sim q)]$ {\footnotesize Leyes distributivas.}
+                \par$(\sim p \vee q) \wedge [(\sim p \wedge p) \vee (\sim p \wedge \sim q)]$ {\footnotesize Leyes del tercio excluido.}
+                \par$(\sim p \vee q) \wedge [F \vee (\sim p \wedge \sim q)]$ {\footnotesize Formas normales.} 
+                \par$(\sim p \vee q) \wedge (\sim p \wedge \sim q)$ {\footnotesize Leyes conmutativas.} 
+                \par$\sim p \wedge \sim q \wedge (\sim q \vee \sim p)$ {\footnotesize Leyes de absorción.}
+                \par$\sim p \wedge \sim q$ \textbf{\footnotesize Contingencia.}
+                \vspace{0.6cm}
+
+            \item {\large $(\sim p \vee q) \longrightarrow (q \longrightarrow p)$} {\footnotesize Leyes condicionales.}
+                \par$\sim (\sim p \wedge q) \vee (\sim q \vee p)$ {\footnotesize Leyes de Morgan.}
+                \par$(p \vee \sim q) \vee (\sim q \vee p)$ {\footnotesize Ley de idempotencia.}
+                \par$p \vee \sim q$ \textbf{\footnotesize Contingencia.}
+                \vspace{0.6cm}
+            
+            \item {\large $[(p \wedge q) \longrightarrow \sim p] \wedge \sim q$} {\footnotesize Leyes condicionales.}
+                \par$[\sim (p \wedge q) \vee \sim p] \wedge \sim q$ {\footnotesize Leyes de Morgan.}
+                \par$[\sim p \vee \sim q  \vee \sim p] \wedge \sim q$ {\footnotesize Ley de idempotencia.}
+                \par$(\sim p \vee \sim q) \wedge \sim q$ {\footnotesize Leyes de absorción.}
+                \par$\sim q$ \textbf{\footnotesize Contingencia.}
+                \vspace{0.6cm}
+
+            \item {\large $[(p \longrightarrow q) \longrightarrow (p \wedge q)] \vee (p \wedge r)$} {\footnotesize Leyes condicionales.}
+                \par$[\sim (\sim p \vee q) \vee (p \wedge q)] \vee (p \wedge r)$ {\footnotesize Leyes de Morgan.}
+                \par$[(p \wedge \sim q)\vee (p \wedge q)]  \vee (p \wedge r)$ {\footnotesize Leyes distributivas.}
+                \par$[p \wedge (\sim q \vee q)]  \vee (p \wedge r)$ {\footnotesize Leyes del tercio excluido.}
+                \par$[p \wedge V]  \vee (p \wedge r)$ {\footnotesize Formas normales.} 
+                \par$p  \vee (p \wedge r)$ {\footnotesize Leyes de absorción.}
+                \par$p$ \textbf{\footnotesize Contingencia.}
+                \vspace{0.6cm}
+            
+            \item {\large $[(p \longrightarrow r) \longrightarrow p] \wedge [\sim p \longrightarrow (p \wedge q)]$} {\footnotesize Leyes bicondicionales e involución.}
+                \par$[\sim (\sim p \vee r) \vee p] \wedge [ p \vee (p \wedge q)]$ {\footnotesize Leyes de Morgan.}
+                \par$[( p \wedge \sim r) \vee p] \wedge [ p \vee (p \wedge q)]$ {\footnotesize Leyes distributivas.}
+                \par$p \vee [(p \wedge \sim r) \wedge ( p \wedge q)]$ {\footnotesize Leyes conmutativas.} 
+                \par$p \vee [p \wedge p \wedge q \wedge \sim r]$ {\footnotesize Ley de idempotencia.}
+                \par$p \vee [p \wedge q \wedge \sim r]$ {\footnotesize Leyes distributivas.}
+                \par$(p \vee p) \wedge (p \vee q) \wedge (p \vee \sim r)$ {\footnotesize Ley de idempotencia.}
+                \par$p \wedge (p \vee q) \wedge (p \vee \sim r)$ {\footnotesize Leyes de absorción.}
+                \par$p \wedge (p \vee \sim r)$ {\footnotesize Leyes de absorción.}
+                \par$p$ \textbf{\footnotesize Contingencia.}
+
+        \end{enumerate}
+
+\end{document}
