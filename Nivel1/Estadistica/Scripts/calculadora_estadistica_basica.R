@@ -13,7 +13,11 @@ get_respuesta_numerica <- function(pregunta){
   respuesta <- ''
   while (TRUE) {
     respuesta <- readline(prompt = pregunta)
-    if (!is.na(suppressWarnings(as.numeric(respuesta)))) { break }
+    if (is.na(suppressWarnings(as.numeric(respuesta)))) { 
+      cat('\nError, debe ingresar un dato numérico...') 
+    } else { 
+      break 
+    }
   }
   return(as.numeric(respuesta))
 }
