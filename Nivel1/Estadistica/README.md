@@ -9,5 +9,5 @@
 
 ### Tareas
 <ul>
-  <li><a href=""></a></li>
+  <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Estadistica/Tareas/Tarea1.pdf">Tarea 1:</a> Ejercicios sobre muestreo.</li>
 </ul>
