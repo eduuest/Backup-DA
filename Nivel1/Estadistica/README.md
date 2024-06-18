@@ -1,4 +1,4 @@
-## Estadística Descriptiva
+## Fundamentos de Estadística
 
 ### Scripts:
 
