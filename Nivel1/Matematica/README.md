@@ -1,4 +1,4 @@
-## Matemática Discreta y Cálculo Básico
+## Matemática
 
 ### Tareas
 
