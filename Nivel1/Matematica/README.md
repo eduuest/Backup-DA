@@ -10,5 +10,5 @@
     <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Matematica/Tareas/Tarea5.pdf">Tarea 5:</a> Actividad - Tablas de verdad.</li>
     <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Matematica/Tareas/Tarea6.pdf">Tarea 6:</a> Escape matemático con expresiones lógicas compuestas.</li>
     <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Matematica/Tareas/Tarea7.pdf">Tarea 7:</a> Taller de ejercicios - Leyes del Álgebra Proposicional.</li>
-    <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Matematica/Tareas/Tarea8.pdf">Tarea 8:</a> Guia Practica N°1 - Leyes del Álgebra Proposicional.</li>
+    <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Matematica/Tareas/Tarea8.pdf">Tarea 8:</a> Guia Practica N°1 - Introducción a la lógica proposicional, conceptos y estructuras básicas.</li>
 </ul>
