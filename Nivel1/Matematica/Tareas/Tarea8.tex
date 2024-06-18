@@ -38,9 +38,84 @@
         \begin{itemize}
             % PARTE 1: -----------------------------------------------------
             \item \textbf{Problemas de la Vida Real:} \\Aplicar la lógica proposicional para modelar y resolver 3 problemas de la vida cotidiana. Una vez modelada las situaciones elabore la tabla de verdad y en otro apartado simplifique las aplicando las leyes de lógica proposicional.
-            
+                \begin{enumerate}
+                    % Ejercicio N°1: ..........................................
+                    \item Si aprobamos la materia de Matemática Discreta, entonces significa que estudiamos la teoría de lógica proposicional. Pero no estudiamos la teoría de lógica proposicional y si aprobamos la materia de Matemática Discreta, entonces tuvimos suerte.
+                        \par$p:$ Aprobamos la materia de Matemática Discreta.
+                        \par$q:$ Estudiamos la teoría de lógica proposicional.
+                        \par$r:$ Tuvimos suerte.
+                        \par$n = 3$, $2^n = 2^3 = 8.$ \vspace{0.5cm}
+                        \par\textbf{Proposición: }$(p \longrightarrow q) \wedge [(\sim q \wedge p) \longrightarrow r]$\vspace{0.5cm}
+
+                        \begin{figure}[!h]
+                            \centering
+                            \includegraphics[width=0.7\textwidth]{Img/Tarea8_a_ej1.png}
+                        \end{figure} \vspace{0.5cm}
+
+                        \par{\large$(p \longrightarrow q) \wedge [(\sim q \wedge p) \longrightarrow r]$} \vspace{0.5cm}
+                        \par$(\sim p \vee q) \wedge [\sim (\sim q \wedge p) \vee r]$ {\footnotesize Leyes condicionales.}
+                        \par$(\sim p \vee q) \wedge [(q \vee \sim p) \vee r]$ {\footnotesize Leyes de Morgan e involución.}
+                        \par$(\sim p \vee q) \wedge [(\sim p \vee q) \vee r]$ {\footnotesize Leyes asociativas.}
+                        \par$\sim p \vee q$ {\footnotesize Leyes de absorción.} \vspace{0.5cm}
+                        \par\textbf{Respuesta: } la proposición es una contingencia. \vspace{0.5cm}
+
+                        
+                    % Ejercicio N°2: ..........................................
+                    \newpage
+                    \item Si hemos dormido las 8 horas reglamentarias, entonces tenemos mucha energía y aprobaremos el examen con un 10. Pero no es cierto que tengamos mucha energía o que aprobemos el examen con un 10, entonces no hemos dormido las 8 horas reglamentarias.
+                        \par$p:$ Hemos dormido las 8 horas reglamentarias.
+                        \par$q:$ Tenemos mucha energía.
+                        \par$r:$ Aprobamos el examen con un 10.
+                        \par$n = 3$, $2^n = 2^3 = 8.$ \vspace{0.5cm}
+                        \par\textbf{Proposición: }$[p \longrightarrow (q \wedge r)] \wedge [\sim (q \vee r) \longrightarrow \sim p]$\vspace{0.5cm}
+
+                        \begin{figure}[!h]
+                            \centering
+                            \includegraphics[width=0.7\textwidth]{Img/Tarea8_a_ej2.png}
+                        \end{figure} \vspace{0.5cm}
+
+                        \par{\large$[p \longrightarrow (q \wedge r)] \wedge [\sim (q \vee r) \longrightarrow \sim p]$} \vspace{0.5cm}
+                        \par$[\sim p \vee (q \wedge r)] \wedge [(q \vee r) \vee \sim p]$ {\footnotesize Leyes condicionales e involución.}
+                        \par$\sim p \vee [(q \wedge r) \wedge (q \vee r)]$ {\footnotesize Leyes distributivas.}
+                        \par$\sim p \vee [q \wedge (r \wedge (r \vee q))]$ {\footnotesize Leyes asociativas.}
+                        \par$\sim p \vee (q \wedge r)$ {\footnotesize Leyes de absorción.} \vspace{0.5cm}
+                        \par\textbf{Respuesta: } la proposición es una contingencia. \vspace{0.5cm}
+
+                   
+                    % Ejercicio N°3: ..........................................
+                    \newpage
+                    \item Ganaré la competencia de 5k organizada por los estudiantes de entrenamiento deportivo si y solo si entreno todos los días por una hora. Tuve mucha fatiga durante la carrera y no logré llegar a la meta primero. En conclusión, como no cumplí con el entrenamiento, entonces tuve dicha fatiga y por lo tanto no gané la competencia.
+                        \par$p:$ Gane la competencia de 5k organizada por los estudiantes de entrenamiento deportivo.
+                        \par$q:$ Entrene todos los días por una hora.
+                        \par$r:$ Tuve mucha fatiga durante la carrera.
+                        \par$n = 3$, $2^n = 2^3 = 8.$ \vspace{0.5cm}
+                        \par\textbf{Proposición: }$[(p \leftrightarrow q) \wedge (r \wedge \sim p)] \longrightarrow [\sim q \longrightarrow (r \wedge \sim p)]$\vspace{0.5cm}
+
+                        \begin{figure}[!h]
+                            \centering
+                            \includegraphics[width=0.9\textwidth]{Img/Tarea8_a_ej3.png}
+                        \end{figure} \vspace{0.5cm}
+
+                        \par{\large$[(p \leftrightarrow q) \wedge (r \wedge \sim p)] \longrightarrow [\sim q \longrightarrow (r \wedge \sim p)]$} \vspace{0.5cm}
+                        \par$[[(p \longrightarrow q) \wedge (q \longrightarrow p)] \wedge (r \wedge \sim p)] \longrightarrow [\sim q \longrightarrow (r \wedge \sim p)]$ {\footnotesize Leyes bicondicionales.}
+                        \par$[[(\sim p \vee q) \wedge (\sim q \vee p)] \wedge (r \wedge \sim p)] \longrightarrow [q \vee (r \wedge \sim p)]$ {\footnotesize Leyes condicionales e involución.}
+                        \par$\sim [[(\sim p \vee q) \wedge (\sim q \vee p)] \wedge (r \wedge \sim p)] \vee [q \vee (r \wedge \sim p)]$ {\footnotesize Leyes condicionales.}
+                        \par$[\sim [(\sim p \vee q) \wedge  (\sim q \vee p)] \vee \sim (r \wedge \sim p)] \vee [q \vee (r \wedge \sim p)]$ {\footnotesize Leyes de Morgan.}
+                        \par$[[\sim (\sim p \vee q) \vee \sim (\sim q \vee p)] \vee (\sim r \vee  p)] \vee [q \vee (r \wedge \sim p)]$ {\footnotesize Leyes de Morgan.}
+                        \par$[[(p \wedge \sim q) \vee  (q \wedge \sim p)] \vee (\sim r \vee  p)] \vee [q \vee (r \wedge \sim p)]$ {\footnotesize Leyes de Morgan.}
+                        \par$p \vee (p \wedge \sim q)  \vee (q \wedge \sim p) \vee (r \wedge \sim p) \vee \sim r  \vee q$ {\footnotesize Leyes asociativas.}
+                        \par$p  \vee  \sim p \wedge (q \vee r) \vee \sim r  \vee q$ {\footnotesize Leyes de absorción y distributivas.}
+                        \par$V \wedge (q \vee r) \vee \sim r  \vee q$  {\footnotesize Leyes del tercio excluido.}
+                        \par$q \vee r \vee \sim r  \vee q$ {\footnotesize Formas normales.}
+                        \par$(r \vee \sim r) \vee (q \vee q)$ {\footnotesize Leyes asociativas.}
+                        \par$V \vee q$ {\footnotesize Leyes del tercio excluido e idempotencia.}
+                        \par$V$ {\footnotesize Formas normales.} \vspace{0.5cm}
+                        \par\textbf{Respuesta: } la proposición es una Tautología. \vspace{0.5cm}
+                
+                \end{enumerate}
             
             % PARTE 2: -----------------------------------------------------
+            \newpage
             \item \textbf{ Poner en práctica lo aprendido: Modelar las situaciones en expresiones lógicas.}\\ Dadas las siguientes situaciones formalice a lenguaje proposicional y elabore las tablas de verdad: 
             
             \begin{enumerate}
