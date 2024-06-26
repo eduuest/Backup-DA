@@ -10,6 +10,8 @@ Algoritmo Ejercicio13
 	Escribir "Ingrese un número entero: "
 	Leer n
 	
+	suma = 0
+	
 	Para d = 1 Hasta n - 1
 		
 		Si n % d == 0 Entonces

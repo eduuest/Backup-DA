@@ -6,7 +6,7 @@ Algoritmo Ejercicio12
 	
 	num = 0
 	
-	Mientras num <= 1 o num >= 5 Hacer
+	Mientras num < 1 o num > 5 Hacer
 		
 		Escribir "Ingrese un número: "
 		Leer num
