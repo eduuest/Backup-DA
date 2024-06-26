@@ -5,28 +5,28 @@
 
 Algoritmo Ejercicio13
 	
-	Definir num, divisor, suma Como Entero
+	Definir n, d, suma Como Entero
 	
 	Escribir "Ingrese un número entero: "
-	Leer num
+	Leer n
 	
-	divisor = 1
+	d = 1
 	suma = 0
 	
-	Mientras divisor < num Hacer
+	Mientras d < n Hacer
 		
-		Si num % divisor == 0 Entonces
-			suma = suma + divisor
+		Si n % d == 0 Entonces
+			suma = suma + d
 		FinSi
 		
-		divisor = divisor + 1
+		d = d + 1
 		
 	FinMientras
 	
-	Si suma == num Entonces
-		Escribir num, " si es un número perfecto."
+	Si suma == n Entonces
+		Escribir n, " si es un número perfecto."
 	SiNo
-		Escribir num, " no es un número perfecto."
+		Escribir n, " no es un número perfecto."
 	FinSi
 	
 FinAlgoritmo
