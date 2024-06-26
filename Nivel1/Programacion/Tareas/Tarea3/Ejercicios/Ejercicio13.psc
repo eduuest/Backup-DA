@@ -24,7 +24,7 @@ Algoritmo Ejercicio13
 	FinMientras
 	
 	Si suma == num Entonces
-		Escribir num, "si es un número perfecto."
+		Escribir num, " si es un número perfecto."
 	SiNo
 		Escribir num, " no es un número perfecto."
 	FinSi
