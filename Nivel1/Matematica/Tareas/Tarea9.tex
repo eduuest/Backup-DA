@@ -7,6 +7,7 @@
 \usepackage[margin=2.54cm]{geometry}
 \usepackage{graphicx}
 \usepackage{xcolor}
+\usepackage{enumitem}
 
 
 % -------------------- CARGA DE ARCHIVOS EXTERNOS --------------------
@@ -16,13 +17,13 @@
 
 % -------------------- DEFINICIÓN DE LA PORTADA --------------------
 \rutaLogo{../../../RecursosGlobales/Img/logo_tec_azuay.png}
-\tema{\\ \vspace{1cm} Taller de ejercicios -   \\ \vspace{1.7cm}}
+\tema{\\ \vspace{1cm} Taller de ejercicios - Algebra booleana  \\ \vspace{1.7cm}}
 \etiquetaAutores{Alumno:}
 \alumno{Eduardo Mendieta \vspace{1cm}}
 \materia{Matemática \vspace{1cm}}
 \docente{Lcda. Vilma Duchi, Mgtr. \vspace{1cm}}
 \ciclo{Primer Ciclo - M1A \vspace{1.1cm}}
-\fecha{16 de junio de 2024 \vspace{1cm}}
+\fecha{27 de junio de 2024 \vspace{1cm}}
 \periodo{Abril 2024 - Agosto 2024}
 
 
@@ -32,9 +33,53 @@
 
     \input{../../../RecursosGlobales/Docs/PortadaTareas}
   
-    \section*{\centering Guía práctica N°1 - Unidad 2\\Aplicaciones Prácticas}
+    \section*{\centering Algebra booleana - Funciones y simplificación de expresiones}
 
         \vspace{0.6cm}
-        \textbf{Resolver los siguientes ejercicios:}
+        
+        \begin{enumerate}[label = \textbf{\alph*.}]
+            % PARTE 1 -----------------------------------------------------------------
+            \item \textbf{Simplifique las siguientes expresiones:}
+                \begin{enumerate}[label = \textbf{\arabic*.}]
+                    % Ejercicio 1: ***********************************
+                    \item $\mathbf{\overline{(A + \overline{B} \cdot C)} + (\overline{A} \cdot B \cdot \overline{C})}$
+                    
+                    % Ejercicio 2: ***********************************
+                    \item $\mathbf{(A \cdot B \cdot \overline{C}) + (A \cdot B \cdot C) + (A \cdot \overline{B} \cdot \overline{C}) + (\overline{A}\cdot B \cdot \overline{C})}$
+                    
+                    % Ejercicio 3: ***********************************
+                    \item $\mathbf{\overline{\overline{A} \cdot (C + D) + \overline{B} \cdot (A + D) + (\overline{A} \cdot \overline{B} \cdot \overline{C})}}$
+                    
+                    % Ejercicio 4: ***********************************
+                    \item $\mathbf{A \cdot (\overline{C} + B \cdot \overline{D} + D \cdot E) + D \cdot (B \cdot C + \overline{A} + B) + \overline{B} \cdot [A \cdot (E + C \cdot E) + (A \cdot \overline{C} \cdot \overline{D} \cdot E)]}$
+                    
+                \end{enumerate}
+
+            % PARTE 2 ------------------------------------------------------------------
+            \item \textbf{Realice las tablas de verdad para las siguientes funciones de salida:}
+                \begin{enumerate}[label = \textbf{\arabic*.}]
+                    % Ejercicio 1: ***********************************
+                    \item $\mathbf{F = A \cdot B + A \cdot \overline{B}}$
+                    
+                    % Ejercicio 2: ***********************************
+                    \item $\mathbf{F = A \cdot B + C \cdot \overline{B}}$
+                    
+                    % Ejercicio 3: ***********************************
+                    \item $\mathbf{F = \overline{\overline{(A + B)} + c}}$
+                    
+                    % Ejercicio 4: ***********************************
+                    \item $\mathbf{Z = \overline{\overline{(A + B)} + \overline{(\overline{B} + C)} + \overline{(B + \overline{C})}}}$
+                    
+                    % Ejercicio 5: ***********************************
+                    \item $\mathbf{Z = (A \cdot \overline{B} \cdot \overline{C}) + (\overline{A} \cdot \overline{B} \cdot C) + (A \cdot \overline{B} \cdot C) + (\overline{A} \cdot B \cdot C)}$
+                    
+                    % Ejercicio 6: ***********************************
+                    \item $\mathbf{F = (A \cdot B \cdot C) + (\overline{A} \cdot B \cdot C) + (B \cdot C)}$
+                    
+                    % Ejercicio 7: ***********************************
+                    \item $\mathbf{Z = (\overline{A} \cdot B \cdot C) + (A \cdot \overline{B} \cdot C) + (A \cdot B \cdot \overline{C}) + (A \cdot B \cdot C)}$
+                \end{enumerate}
+
+        \end{enumerate}
 
 \end{document}
