@@ -30,7 +30,6 @@ obt_respuesta_numerica <- function(pregunta) {
 # Opciones de la calculadora: --------------------------------------------------
 
 imp_tamano_muestra <- function() {
-  limpiar_consola()
   cat("\n------ OBTENER TAMAÑO DE MUESTRA ------\n")
   cat("\n[1] Con población finita.\n[2] Con población infinita\n[3] Con Desviación estandar.")
   cat("\nPresiona cualquier otra letra para salir.\n")
@@ -61,7 +60,6 @@ imp_tamano_muestra <- function() {
 # Función Principal: -----------------------------------------------------------
 
 main <- function() {
-  limpiar_consola()
   imp_tamano_muestra()
 }
 
