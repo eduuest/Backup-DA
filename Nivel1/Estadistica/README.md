@@ -3,7 +3,7 @@
 ### Scripts:
 
 <ul>
-  <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Estadistica/Scripts/calculadora_estadistica_basica.R">Calculadora</a> para estadística básica.</li>
+  <li><a href="https://github.com/eduuest/Backup-DA/blob/main/Nivel1/Estadistica/Scripts/calculadora_estadistica_basica.py">Calculadora</a> para estadística básica.</li>
 </ul>
 
 
