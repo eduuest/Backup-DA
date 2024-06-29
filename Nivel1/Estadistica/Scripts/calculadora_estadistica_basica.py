@@ -1,8 +1,8 @@
 # Operaciones: -----------------------------------------------------------------
 
-def obt_tamano_muestra(opcion, N, z, p, e, s):
+def obt_tamano_muestra(opcion, n, z, p, e, s):
     if opcion == "1":
-        resultado = (N * z**2 * p * (1 - p)) / (e**2 * (N - 1) + z**2 * p * (1 - p))
+        resultado = (n * z**2 * p * (1 - p)) / (e**2 * (n - 1) + z**2 * p * (1 - p))
     elif opcion == "2":
         resultado = (z**2 * p * (1 - p)) / e**2
     else:
@@ -32,18 +32,18 @@ def imp_tamano_muestra():
     opcion = input("Ingresa una de la opciones: ")
 
     if opcion == "1" or opcion == "2" or opcion == "3":
-        N = 0
+        n = 0
         s = 0
         z = obt_respuesta_numerica("\nIngrese el valor del nivel de confianza: ")
         p = obt_respuesta_numerica("Ingrese la proporción esperada de la población [entre 0 y 1]: ")
         e = obt_respuesta_numerica("Ingrese el margen de error[entre 0 y 1]: ")
 
         if opcion == "1": 
-            N = obt_respuesta_numerica("Ingrese el total de la población: ")
+            n = obt_respuesta_numerica("Ingrese el total de la población: ")
         if opcion == "3":
             s = obt_respuesta_numerica("Ingresa el valor de la desviación estandar: ")
         
-        muestra = obt_tamano_muestra(opcion, N, z, p, e, s)
+        muestra = obt_tamano_muestra(opcion, n, z, p, e, s)
 
         print("\nEl tamaño de la muestra es de: ", muestra, " --> ", round(muestra), "\n")
 
