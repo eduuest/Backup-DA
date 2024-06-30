@@ -63,16 +63,23 @@
                         \vspace{0.5cm}
                     
                     % Ejercicio 3: ***********************************
-                    \item $\mathbf{\overline{\overline{A} \cdot (C + D) + \overline{B} \cdot (A + D) + (\overline{A} \cdot \overline{B} \cdot \overline{C})}}$
-                        \vspace{0.5cm}
-                    
-                    % Ejercicio 4: ***********************************
-                    \item $\mathbf{A \cdot (\overline{C} + B \cdot \overline{D} + D \cdot E) + D \cdot (B \cdot C + \overline{A} + B) + \overline{B} \cdot [A \cdot (E + C \cdot E) + (A \cdot \overline{C} \cdot \overline{D} \cdot E)]}$
+                    \item $\mathbf{\overline{\overline{A} \cdot (C + D) + \overline{B} \cdot (A + D) + (\overline{A} \cdot \overline{B} \cdot \overline{C})}}$ Leyes de Morgan.
+                        \par$\overline{\overline{A} \cdot (C + D)} \cdot \overline{\overline{B} \cdot (A + D)} \cdot \overline{ \overline{A} \cdot  \overline{B} \cdot  \overline{C}}$ Leyes de Morgan
+                        \par$A + \overline{C + D} \cdot B + \overline{A + D} \cdot (A + B + C)$ Leyes de Morgan.
+                        \par$(A + \overline{C} \cdot \overline{D}) \cdot (B + \overline{A} \cdot \overline{D}) \cdot (A + B + C)$ Leyes Distributivas.
+                        \par$(A \cdot B + A \cdot \overline{A} \cdot \overline{D} + B \cdot \overline{C} \cdot \overline{D} + \overline{A} \cdot \overline{C} \cdot \overline{D} \cdot \overline{D}) \cdot (A + B + C)$ Complemento.
+                        \par$(A \cdot B + B \cdot \overline{C} \cdot \overline{D} + \overline{A} \cdot \overline{C} \cdot \overline{D}) \cdot (A + B + C)$ Leyes Distributivas.
+                        \par$A \cdot A \cdot B + A \cdot B \cdot B + A\cdot B \cdot C + A \cdot B \cdot \overline{C} \cdot \overline{D} + B \cdot B \cdot \overline{C} \cdot \overline{D} + B \cdot C \cdot \overline{C} \cdot \overline{D} + A \cdot \overline{A} \cdot \overline{C} \cdot \overline{D} + \overline{A} \cdot B \cdot \overline{C} \cdot \overline{D} + \overline{A} \cdot C \cdot \overline{C} \cdot \overline{D}$ Idempotencia y elementos nulos.
+                        \par$A \cdot B + A \cdot B + A \cdot B \cdot C + A \cdot B \cdot \overline{C} \cdot \overline{D} + B \cdot \overline{C} \cdot \overline{D} + \overline{A} \cdot B \cdot \overline{C} \cdot \overline{D}$ Idempotencia y absorción.
+                        \par$A \cdot B + A \cdot B \cdot C + B \cdot \overline{C} \cdot \overline{D} + \overline{A} \cdot B \cdot \overline{C} \cdot \overline{D}$ Leyes de absorción.
+                        \par$A \cdot B + B \cdot \overline{C} \cdot \overline{D}$ factor Común.
+                        \par$B \cdot (A + \overline{C} \cdot \overline{D})$ \textbf{R/}
                         \vspace{0.5cm}
                     
                 \end{enumerate}
 
             % PARTE 2 ------------------------------------------------------------------
+            \newpage
             \item \textbf{Realice las tablas de verdad para las siguientes funciones de salida:}
                 \begin{enumerate}[label = \textbf{\arabic*.}]
                     % Ejercicio 1: ***********************************
